@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", start);
+        async function start(){
+            let response = await fetch("tiger.svg");
+            let mySvgData = await response.text();
+            document.querySelector("section").innerHTML = mySvgData;
+            startManipulatingSvg();
+        }
+        function startManipulatingSvg(){
+            //EYES
+            document.querySelector("#path304").addEventListener("click", changeEyes);
+            document.querySelector("#path308").addEventListener("click", changeEyes);
+            document.querySelector("#path352").addEventListener("click", changeEyes);
+            document.querySelector("#path476").addEventListener("click", changeEyes);
+            //FUR
+            document.querySelectora("g:hover").addEventListener("mouseover", changeFur);
+        }
+        function changeEyes(){
+            document.querySelector("#path304").style.fill = "red";
+            document.querySelector("#path308").style.fill = "red";
+            document.querySelector("#path352").style.fill = "red";
+            document.querySelector("#path476").style.fill = "red";
+        }
+        function changeFur(){
+            document.querySelectorAll("g:hover").style.fill = "black";
+        }
+
+    </script>
+</body>
+</html>
