@@ -1,0 +1,22 @@
+{
+  "name": "workingwithparcel",
+  "version": "0.0.1",
+  "description": "very okay",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbettio/svg.git"
+  },
+  "author": "Patricia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbettio/svg/issues"
+  },
+  "homepage": "https://github.com/pbettio/svg#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
